@@ -1,0 +1,243 @@
+body {
+}
+
+/* header & start animations */
+div#logo-container {
+    height: 110px;
+}
+
+div#header {
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+}
+
+div#logo-container{
+    position: relative;
+    top: 21px;
+    z-index: 3;
+}
+
+img[alt="logo"] {
+    z-index: 1;
+    margin-left: 18%;
+    height: 100%;
+    float: left;
+    -webkit-animation: logo-enter 0.7s ease-in-out;
+    -moz-animation: logo-enter 0.7s ease-in-out;
+    animation: logo-enter 0.7s ease-in-out;
+}
+
+@-webkit-keyframes logo-enter {
+    0% {margin-left: 100%;}
+    100% {margin-left: 18%}
+}
+
+@-moz-keyframes logo-enter {
+    0% {margin-left: 100%;}
+    100% {margin-left: 18%}
+}
+
+@keyframes logo-enter {
+    0% {margin-left: 100%;}
+    100% {margin-left: 18%}
+}
+
+div#nav-container {
+    width: 100%;
+    padding: 0;
+}
+
+div.style-bar {
+    display: block;
+    height: 17px;
+    width: 100%;
+    margin: 0;
+    float: left;
+    background-color: rgb(79,129,189);
+    z-index: 1;
+    -webkit-animation: line-enter 0.7s ease-in-out;
+    -moz-animation: line-enter 0.7s ease-in-out;
+    animation: line-enter 0.7s ease-in-out;
+}
+
+div.style-bar#top-line {
+    position: relative;
+}
+
+div.style-bar#bottom-line {
+}
+
+div#overlay {
+    display: block;
+    height: 700px;
+    top: 21px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+div#overlay-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 140px;
+}
+
+@-webkit-keyframes line-enter {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+
+@-moz-keyframes line-enter {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+
+@keyframes line-enter {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+
+/*
+div#nav-container div.container-fluid {
+    position: relative;
+    display: block;
+    width: 100%;
+
+}
+
+nav.navbar-default {
+    display:block;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+nav div.collapse.navbar-collapse {
+    margin: 0;
+    width: 100%;
+}
+
+nav ul.nav {
+    background-color: #f8f8f8;
+    width: 430px;
+    margin: 0 auto;
+    float: none;
+}
+*/
+
+
+/* Body */
+
+div#body {
+    height: 600px;
+    position: relative;
+    background-color: #ECF0F1;
+}
+
+div#body ul {
+    height: 100%;
+    width: 28%;
+    list-style-type: none;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+div#body li {
+    height: 25%;
+}
+
+
+div#body li a {
+    position: relative;
+    padding: 45px 15px 15px 15px;
+    color: rgb(100,100,100);
+    float: right;
+    font-weight: bold;
+    font-size: 24pt;
+    text-align: right;
+    vertical-align: middle;
+}
+
+div#body li a#bio:hover {
+    color:#F9690E;
+}
+div#body li a#engineer:hover {
+    color: #1abc9c;
+}
+div#body li a#webdev:hover {
+    color: #F7CA18;
+}
+div#body li a#contact:hover {
+    color:#CF000F;
+}
+div#body li a:hover {
+    text-decoration: none;
+}
+
+div.catline {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    margin-left:28%;
+    background-color: rgb(205,205,205);
+    -ms-transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    transform: translate(0px, -50px);
+}
+
+div.catline.active.bio {
+    width: 0px;
+    background-color:#F9690E;
+}
+div.catline.active.bio:hover {
+    -webkit-animation: catline-active 0.5s ease-out;
+    -moz-animation: catline-active 0.5s ease-out;
+    animation: catline-active 0.5s ease-out;
+}
+
+div.catline.active.engineer {
+    width: 0px;
+    background-color:#1abc9c;
+}
+div.catline.active.engineer:hover {
+    -webkit-animation: catline-active 0.5s ease-out;
+    -moz-animation: catline-active 0.5s ease-out;
+    animation: catline-active 0.5s ease-out;
+}
+
+
+div.catline.active.webdev {
+    width: 0px;
+    background-color:#F7CA18;
+}
+div.catline.active.webdev:hover {
+    -webkit-animation: catline-active 0.5s ease-out;
+    -moz-animation: catline-active 0.5s ease-out;
+    animation: catline-active 0.5s ease-out;
+}
+
+
+div.catline.active.contact {
+    width: 0px;
+    background-color:#CF000F;
+}
+div.catline.active.contact:hover {
+    -webkit-animation: catline-active 0.5s ease-out;
+    -moz-animation: catline-active 0.5s ease-out;
+    animation: catline-active 0.5s ease-out;
+}
+
+
+@-webkit-keyframes catline-active {
+    0% {width: 0px;}
+    100% {width: 100%;}
+}
+
+@-moz-keyframes catline-active {
+    0% {width: 0px;}
+    100% {width:  100%;}
+}
+
+@keyframes catline-active {
+    0% {width: 0px;}
+    100% {width:  100%;}
+}
