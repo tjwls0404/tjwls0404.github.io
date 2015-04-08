@@ -19,4 +19,4 @@ $('#body a').each(function(){
 
 $(window).unload(function() {
     $('body').fade();
-}
+});
