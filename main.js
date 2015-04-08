@@ -10,7 +10,7 @@ $('#body a').each(function(){
    $(this).hover(function(){
        $line.css('width','0px');
        $line.animate({width:"100%"}, 300, function(){
-           if (!$(this).filter(function() { return $(this).is(":hover"); }).length)  $line.css('width', '0px');
+           if (!(!!$(this).filter(function() { return $(this).is(":hover"); }).length))  $line.css('width', '0px');
        })
        }, function() {
            $line.css('width', '0px');
