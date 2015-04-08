@@ -16,3 +16,7 @@ $('#body a').each(function(){
            $line.css('width', '0px');
        });
 });
+
+$(window).unload(function() {
+    $('body').fade();
+}
