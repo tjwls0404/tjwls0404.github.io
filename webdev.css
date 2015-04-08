@@ -1,0 +1,27 @@
+nav.navbar {
+    position: relative;
+}
+
+img {
+    margin: 15px;
+    height: 330px;
+}
+
+h2.page-header {
+    margin: 10px 0px 0px 0px;
+}
+
+@-webkit-keyframes side-enter {
+    0% {width: 0%;}
+    100% {width: 100%}
+}
+
+@-moz-keyframes side-enter {
+    0% {width: 0%;}
+    100% {width: 100%}
+}
+
+@keyframes side-enter {
+    0% {width: 0%;}
+    100% {width: 100%}
+}
