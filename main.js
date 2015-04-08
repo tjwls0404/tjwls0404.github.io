@@ -18,5 +18,5 @@ $('#body a').each(function(){
 });
 
 $(window).unload(function() {
-   $('body').fadeOut('slow')
+   $('body').fadeOut('slow');
 });
