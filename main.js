@@ -17,6 +17,6 @@ $('#body a').each(function(){
        });
 });
 
-$window.on('beforeunload', function() {
+$(window).on('beforeunload', function() {
    $('body').fadeOut('slow');
 });
