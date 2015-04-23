@@ -1,6 +1,6 @@
 //After line animation
 setTimeout(function(){
-    $('#overlay-container').animate({top: "757px"}, 700)
+    $('#overlay-container').animate({top: "600px"}, 700)
 }, 900);
 
 $('#body a').each(function(){
